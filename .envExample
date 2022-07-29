@@ -1,0 +1,6 @@
+PORT='dev port'
+DB_USER='userDb'
+DB_PASSWORD='passwordDb'
+DB_HOST='hostDb'
+DB_NAME='namedB'
+DB_PORT='portDb'

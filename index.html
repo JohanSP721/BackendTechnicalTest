@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*
+		{
+			padding: 0;
+			margin: 0;
+			border: none;
+			box-sizing: border-box;
+			text-decoration: none;
+			list-style: none;
+		}
+
+		ul
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			width: 100vw;
+			height: 100vh;
+		}
+		li
+		{
+			list-style: none;
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: black;
+		}
+	</style>
+	<title>Router</title>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="api/v1/orders">orders</a>
+		</li>
+		<li>
+			<a href="api/v1/products">products</a>
+		</li>
+		<li>
+			<a href="api/v1/suborders">suborders</a>
+		</li>
+		<li>
+			<a href="api/v1/suborders-products">suborders products</a>
+		</li>
+	</ul>
+</body>
+</html>
