@@ -18,7 +18,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-const whitelist = ['http://localhost:5173'];
+const whitelist = ['http://localhost:5173', 'https://morning-bayou-27593.herokuapp.com'];
 
 const options = {
 	origin: (origin, callback) =>
@@ -28,7 +28,7 @@ const options = {
 			callback(null, true);
 		} else
 		{
-			callback(new Error('no permitido'));
+			callback(new Error(`Not allowed by CORS: ${origin}`));
 		}
 	}
 };

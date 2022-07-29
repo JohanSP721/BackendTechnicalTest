@@ -18,7 +18,7 @@ This is the backend for the technical test
 
 ## INSTALLATION
 
-install the npm packages `npm install`.
+Install the npm packages `npm install`.
 
 Initialize the `postgreSQL` and `pgadmin` images to manage the database `docker-compose up -d`.
 
@@ -36,4 +36,16 @@ To run in development mode use the command `npm run dev`.
 
 ## DEPLOYMENT
 
+Run the command `heroku create`.
 
+Add the database with the command `heroku addons:create heroku-postgresql:hobby-dev`.
+
+Deploy the application with the command `git push heroku`.
+
+Create the tables with the command `heroku run npm run migrations:run`.
+
+Add or replace frontend url to array `whitelist` in  `index.js` file.
+
+Save changes with a git commit and deploy the app with `git push heroku`.
+
+Add the products that you think are convenient.
